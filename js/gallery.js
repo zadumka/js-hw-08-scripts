@@ -102,15 +102,3 @@ function onClickOpenImg(event) {
     )
     instance.show();
 
-    const keyPress = event => {
-        if (event.code === 'Escape') {
-            instance.close();
-            document.removeEventListener('keydown', keyPress);
-        }
-    };
-
-    if (instance.show()) {
-        document.addEventListener('keydown', keyPress);
-    }
-
-}
